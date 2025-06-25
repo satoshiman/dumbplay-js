@@ -2,6 +2,8 @@
 
 This repository contains the JavaScript code for the Dumbplay game project. It provides essential game statistics tracking functionality that can be integrated into the Dumbplay game.
 
+Repo link: https://github.com/satoshiman/dumbplay-js.git
+
 ## Features
 
 - Score tracking and display
