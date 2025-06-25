@@ -4,9 +4,9 @@ const concat = require("gulp-concat");
 function bundleScripts() {
   return src([
     "src/checking.js",
-    "src/api.js",
-    "src/wallet.js",
     "src/utils.js",
+    "src/wallet.js",
+    "src/api.js",
     "src/stats.js",
     "src/main.js",
   ])
