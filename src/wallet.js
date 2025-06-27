@@ -139,12 +139,18 @@ window.WalletManager = {
 
   disconnect() {
     window.localStorage.removeItem("isConnected");
-    window.localStorage.removeItem("jwt");
+    Object.keys(localStorage).forEach((key) => {
+      if (key.startsWith("jwt.")) {
+        localStorage.removeItem(key);
+      }
+    });
 
-    WalletManager.setWalletState({
+    this.walletState = {
       isConnected: false,
       address: null,
-    });
+      chainId: null,
+      walletExtensions: null,
+    };
 
     GameStats.resetAll();
 
