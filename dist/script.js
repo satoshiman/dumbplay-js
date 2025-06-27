@@ -283,12 +283,12 @@ window.WalletManager = {
       }
     });
 
-    this.walletState = {
+    this.setWalletState({
       isConnected: false,
       address: null,
       chainId: null,
       walletExtensions: null,
-    };
+    });
 
     GameStats.resetAll();
 
