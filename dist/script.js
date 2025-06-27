@@ -361,11 +361,12 @@ window.ApiUtils = {
       console.log("No address provided");
       return;
     }
-    const { ticketsCount } = await getAPI(
+    const { ticketsCount, bestScore } = await getAPI(
       `player/${WalletManager.address}`,
       false
     );
     GameStats.updateTickets(ticketsCount);
+    GameStats.updateBestScore(bestScore);
   },
 
   async auth() {
