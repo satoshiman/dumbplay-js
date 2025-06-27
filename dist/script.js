@@ -320,7 +320,7 @@ window.WalletManager = {
   // Initialize wallet
   async initialize() {
     console.log("initialize");
-    this.setWalletState = this.setWalletState.bind(this);
+    // this.setWalletState = this.setWalletState.bind(this);
   },
 };
 
