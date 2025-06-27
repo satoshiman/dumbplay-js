@@ -283,11 +283,9 @@ window.WalletManager = {
       }
     });
 
-    this.setWalletState({
-      isConnected: false,
+    WalletManager.setWalletState({
       address: null,
-      chainId: null,
-      walletExtensions: null,
+      isConnected: false,
     });
 
     GameStats.resetAll();
